@@ -1,0 +1,3 @@
+Projeto em desenvolvimento...
+
+Até o momento foi desenvolvido a versão mobile.
