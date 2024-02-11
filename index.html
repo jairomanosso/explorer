@@ -16,44 +16,54 @@
 <body>
     <div id="app">
         <section id="main">
-            <img id="banner-img" src="./assets/astronaut.png" alt="Desenho de um astronauta">
-            <h1>Explore sem limites</h1>
-            <p>Porque o aprendizado é contínuo</p>
-            <img id="arrow-down" src="./assets/arrow-down.svg" alt="">
+            <div class="content">
+                <img id="banner-img" src="./assets/astronaut.png" alt="Desenho de um astronauta">
+                <div id="main-description">
+                    <h1>Explore sem limites</h1>
+                    <p>Porque o aprendizado é contínuo</p>
+                </div>
+                <a href="#explore">
+                    <img id="arrow-down" src="./assets/arrow-down.svg" alt="">   
+                </a>
+            </div>
         </section>
         <section id="explore">
-            <div class="card">
-                <img src="./assets/yellow-moon.svg" alt="Desenho de uma lua amarela">
-                <h2>Não pare nunca</h2>
-                <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/blue-moon.svg" alt="Desenho de uma lua azul">
-                <h2>Só volta</h2>
-                <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/red-moon.svg" alt="Desenho de uma lua vermelha">
-                <h2>Siga seu ritmo</h2>
-                <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+            <div class="content">
+                <div class="card">
+                    <img src="./assets/yellow-moon.svg" alt="Desenho de uma lua amarela">
+                    <h2>Não pare nunca</h2>
+                    <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/blue-moon.svg" alt="Desenho de uma lua azul">
+                    <h2>Só volta</h2>
+                    <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/red-moon.svg" alt="Desenho de uma lua vermelha">
+                    <h2>Siga seu ritmo</h2>
+                    <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+                </div>
             </div>
         </section>
         <section id="contact">
-            <h2>Entre em contato</h2>
-            <form id="contact-form">
-                <div class="input-wrapper">
-                    <img src="./assets/person-icon.svg" alt="Ícone de uma pessoa">
-                    <label for="name">Seu nome</label>
-                    <input type="text" id="name" placeholder="Seu Nome">
-                </div>
-                <div class="input-wrapper">
-                    <img src="./assets/at-sign.svg" alt="Ícone de um arroba">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
-                <textarea id="text-area" placeholder="Digite sua mensagem aqui..."></textarea>
-            </form>
-            <button form="contact-form">Enviar Mensagem</button>
+            <div class="content">
+                <h2>Entre em contato</h2>
+                <form id="contact-form">
+                    <div class="input-wrapper">
+                        <img src="./assets/person-icon.svg" alt="Ícone de uma pessoa">
+                        <label for="name">Seu nome</label>
+                        <input type="text" id="name" placeholder="Seu Nome">
+                    </div>
+                    <div class="input-wrapper">
+                        <img src="./assets/at-sign.svg" alt="Ícone de um arroba">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <textarea id="text-area" placeholder="Digite sua mensagem aqui..."></textarea>
+                </form>
+                <button form="contact-form">Enviar Mensagem</button>
+            </div>
         </section>
         <footer>
             © 2023 - Rocketseat Explorer

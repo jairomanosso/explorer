@@ -9,6 +9,7 @@
     --bg-primary-color: hsl(283, 47%, 97%);
     --font-main-color: hsl(244, 38%, 28%);
     --font-title-color: hsl(320, 69%, 42%);
+    scroll-behavior: smooth;
 }
 
 body{
@@ -17,31 +18,42 @@ body{
     color: var(--font-main-color);
 }
 
+.content {
+    max-width: 144rem;
+}
+
 #main {
     background-color: var(--bg-primary-color);
-    padding: 0  3.2rem;
+}
+
+#main .content {
+    padding: 0 3.2rem 3.2rem;
     text-align: center;
-    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #banner-img {
     width: 100%;
 }
 
-#main h1 {
+#main-description h1 {
     font-weight: 900;
     font-size: 3.2rem;
     color: var(--font-title-color);
     margin-top: 1.6rem;
 }
 
-#main p {
+#main-description p {
     font-weight: 600;
     font-size: 2rem;
 }
 
 #arrow-down {
+    width: 5.6rem;
     border: none;
     background: none;
     margin-top: 4.8rem;
@@ -51,6 +63,10 @@ body{
 #explore {
     background: rgb(52,49,147);
     background: linear-gradient(140deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    
+}
+
+#explore .content {
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
@@ -63,6 +79,7 @@ body{
     padding: 2.4rem;
 }
 
+
 .card h2 {
     font-size: 2.9rem;
     font-weight: 900;
@@ -72,8 +89,11 @@ body{
 }
 
 #contact {
-    padding: 8rem 4rem;
     background-color: var(--bg-primary-color);
+}
+
+#contact .content {
+    padding: 8rem 4rem;
 }
 
 #contact h2 {
@@ -96,6 +116,7 @@ body{
     border-radius: 1.6rem;
     border: 1.5px solid var(--font-main-color);
     padding: 1.6rem;
+    background-color: var(--bg-primary-color);
     
 }
 
@@ -115,7 +136,6 @@ body{
 
 .input-wrapper input {
     border: none;
-    background-color: var(--bg-primary-color);
     width: 100%;
     height: 100%;
 }
@@ -129,7 +149,7 @@ body{
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
     outline: none;
-
+    background-color: var(--bg-primary-color);
 }
 
 #text-area {
@@ -185,5 +205,112 @@ footer {
       transform: translateY(-6.4px);
     }
   }
+
+@media (min-width: 768px) {
+    #banner-img {
+        max-width: 70%;
+    }
+
+    #explore,
+    #contact {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
   
-  
+@media (min-width: 1024px) {
+    .content {
+        margin: auto;
+    }
+    
+    #main .content {
+        flex-direction: row-reverse;
+        align-items: start;
+        padding: 0 3.2rem 3.2rem;
+    }
+
+    #main-description {
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-description h1 {
+        font-size: 4.8rem;
+        margin-top: 0;
+    }
+    
+    #main-description p {
+        font-size: 2.4rem;
+    }
+
+    #banner-img {
+        content:url("./assets/big-astronaut.png");
+        max-width: 50%;
+    }
+
+    #arrow-down {
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        bottom: 3.2rem;
+    }
+
+    #explore,
+    #contact {
+        padding: 0;
+    }
+
+    #explore .content {
+        flex-direction: row;
+    }
+
+    #contact {
+        background-image: url(./assets/stars.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #contact .content form{
+        max-width: 50%;
+    }
+
+}  
+
+@media (min-width: 1440px) {
+
+    #main-description h1 {
+        font-size: 5.6rem;
+    }
+    
+    #main-description p {
+        font-size: 3.2rem;
+    }
+
+    .card {
+        border-radius: 2.4rem;
+        padding: 3.2rem;
+    }
+
+    .card img {
+        width: 10rem;
+    }
+
+    .card h2 {
+        font-size: 3.6rem;
+        margin-top: 4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .card p {
+        font-size: 1.9rem;
+    }
+
+    #contact h2 {
+        font-size: 4rem;
+    }
+
+}
