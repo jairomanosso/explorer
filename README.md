@@ -1,3 +1,4 @@
-Projeto em desenvolvimento...
+Rocketseat explorer project
 
-Até o momento foi desenvolvido a versão mobile.
+ - mobile version - complete
+ - desktop version - developing...
